@@ -1,0 +1,19 @@
+[
+  {
+    "namespace": "darkwing",
+    "description": "Test Pilot API",
+    "permissions": ["experiments.darkwing"],
+    "functions": [
+      {
+        "name": "register",
+        "type": "function",
+        "description": "",
+        "async": true,
+        "parameters": [{
+          "name": "id",
+          "type": "string"
+        }]
+      }
+    ]
+  }
+]
