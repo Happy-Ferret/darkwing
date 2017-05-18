@@ -1,4 +1,4 @@
 const Foo = {
-  name: "hello"
+  greeting: "hello"
 }
 this.EXPORTED_SYMBOLS = ["Foo"]

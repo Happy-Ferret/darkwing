@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+  "name": "hello world",
+  "description": "example testpilot experiment",
+  "version": "1.0",
+
+  "background": { "scripts": ["background.js"] },
+  "permissions": [
+    "experiments.darkwing",
+    "notifications"
+  ]
+}

@@ -1,7 +1,21 @@
 [
   {
     "namespace": "darkwing",
-    "description": "Test Pilot API",
+    "description": "Test Pilot API v1",
+    "permissions": ["experiments.darkwing"],
+    "functions": [
+      {
+        "name": "register",
+        "type": "function",
+        "description": "",
+        "async": true,
+        "parameters": []
+      }
+    ]
+  },
+  {
+    "namespace": "darkwing_v2",
+    "description": "Test Pilot API v2",
     "permissions": ["experiments.darkwing"],
     "functions": [
       {
@@ -13,6 +27,15 @@
           "name": "id",
           "type": "string"
         }]
+      }
+    ],
+    "events": [
+      {
+        "name": "onFoo",
+        "type": "function",
+        "description": "an event",
+        "parameters": [
+        ]
       }
     ]
   }

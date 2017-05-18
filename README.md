@@ -29,6 +29,19 @@ We could also offer a nice A/B testing API. Maybe something like:
 const color = browser.testpilot.choose("red", "blue")
 ```
 
+## Code
+
+- [api.js](/api.js) implements the webextension API for use by Test Pilot experiments
+- [schema.json](/schema.json) defines the API implemented by `api.js`
+- [bootstrap.js](/bootstrap.js) loads the API and embedded webextension for the Test Pilot button
+- [webextension/](/webextension/) the embedded Test Pilot webextension whose button opens testpilot.firefox.com
+- [example_experiment](/example_experiment/) an example Experiment webextension that uses the API specified by `schema.json`
+- [content/](/content/) contains XPCOM modules used by `api.js`
+
+## Running this code
+
+To run these addons open `about:debugging` and `Load Temporary Add-on` in a non-release Firefox build. Choose `install.rdf` (in this directory) to load the Test Pilot API add-on. You should see a new toolbar button if it worked. Next, load the `example_experiment/manifest.json` in the same way. You should see a browser notification if it worked.
+
 ## Considerations
 
 - Security
